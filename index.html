@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SYC Vision - Coming Soon</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #000000;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            text-align: center;
+        }
+        .container img {
+            width: 250px;
+            margin-bottom: 50px;
+        }
+        h1 {
+            color: #333;
+            font-size: 2.5rem;
+        }
+        p {
+            color: #666;
+            font-size: 1.2rem;
+        }
+        .loading-bar {
+            margin: 20px auto;
+            width: 50%;
+            height: 8px;
+            background: #ccc;
+            position: relative;
+            overflow: hidden;
+            border-radius: 4px;
+        }
+        .loading-bar::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 30%;
+            height: 100%;
+            background: #007bff;
+            animation: loading 2s linear infinite;
+        }
+        @keyframes loading {
+            from {
+                left: -30%;
+            }
+            to {
+                left: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="SYCLogo.png" alt="SYC Vision Logo">
+        <h1>SYC Vision</h1>
+        <p>Web sitemiz hazırlanıyor. Yakında görüşmek üzere!</p>
+        <div class="loading-bar"></div>
+    </div>
+</body>
+</html>
